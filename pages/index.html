@@ -1,18 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home</title>
-    <link rel="stylesheet" href="../css/style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home</title>
+  <link rel="stylesheet" href="../css/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200&display=swap" rel="stylesheet">
 </head>
 <body>
-    <main class="button-container">
-        <a href="projects.html" class="nav-button">Projects</a>
-        <a href="publications.html" class="nav-button">Publications</a>
-        <a href="drawings.html" class="nav-button">Drawings</a>
-        <a href="about.html" class="nav-button">About</a>
-    </main>
-    <script src="../js/main.js"></script>
+  <header>
+    <div class="header-text">THE ARCHIVE OF CALEB CHRISTIAN</div>
+    <nav class="button-container">
+      <a href="projects.html"     class="nav-button">PROJECTS</a>
+      <a href="publications.html" class="nav-button">PUBLICATIONS</a>
+      <a href="drawings.html"     class="nav-button">DRAWINGS</a>
+      <a href="about.html"        class="nav-button">ABOUT</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="timeline-container">
+      <!-- **Fixed, full‑width rail** -->
+      <div class="timeline-line"></div>
+
+      <!-- **Scroll‑only layer of date markers** -->
+      <div class="timeline-scroll">
+        <div class="timeline-markers">
+          <div class="timeline-marker" style="left:   0%;">2000</div>
+          <div class="timeline-marker" style="left:  20%;">2005</div>
+          <div class="timeline-marker" style="left:  40%;">2010</div>
+          <div class="timeline-marker" style="left:  60%;">2015</div>
+          <div class="timeline-marker" style="left:  80%;">2020</div>
+          <div class="timeline-marker" style="left: 100%;">2025</div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <script src="../js/main.js"></script>
 </body>
 </html>

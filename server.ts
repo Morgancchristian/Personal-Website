@@ -4,13 +4,13 @@ const handler = async (request: Request): Promise<Response> => {
   const url = new URL(request.url);
   let filePath = url.pathname;
 
-  // Serve index.html for the root path
+  
   if (filePath === "/") {
     filePath = "/pages/index.html";
   }
 
   try {
-    // Try to read the file
+    
     const file = await Deno.readFile(`.${filePath}`);
     
     // Determine content type based on file extension
@@ -26,7 +26,7 @@ const handler = async (request: Request): Promise<Response> => {
       },
     });
   } catch (error) {
-    // If file not found, return 404
+   
     return new Response("Not Found", { status: 404 });
   }
 };
